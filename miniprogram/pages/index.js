@@ -5,9 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    dialogShow: false
   },
-
+  tapDialogButton(e) {
+    this.setData({
+      dialogShow: false
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -26,7 +30,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.setData({
+      dialogShow: true
+    })
   },
 
   /**

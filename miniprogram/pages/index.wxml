@@ -1,2 +1,5 @@
 <!--miniprogram/pages/index.wxml-->
 <text>miniprogram/pages/index.wxml</text>
+<mp-dialog title="test" show="{{ dialogShow }}" bindbuttontap="tapDialogButton" buttons="{{[{text: '取消'}, {text: '确认'}]}}">
+    <view>test content</view>
+</mp-dialog>
