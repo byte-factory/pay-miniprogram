@@ -1,1 +1,2 @@
-@import "./weui/wxss/dist/style/weui.wxss"
+@import "./weui/wxss/dist/style/weui.wxss";
+@import "./iconfont/iconfont.wxss"
