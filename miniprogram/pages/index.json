@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "mp-dialog": "/weui/components/dialog/dialog"
-  }
+    "mp-cell": "/weui/components/cell/cell",
+    "mp-cells": "/weui/components/cells/cells",
+    "mp-slideview": "/weui/components/slideview/slideview"
+  },
+  "navigationStyle": "custom"
 }

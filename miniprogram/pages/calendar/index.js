@@ -1,32 +1,13 @@
-// miniprogram/pages/index.js
+// miniprogram/pages/calendar/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    navigationBar: {
-      title: "默认账本",
-      loading: false,
-      color: '#333',
-      background: '#f7f7f7',
-      show: true,
-      animated: false
-    },
-    list: getApp().globalData.tabbar_list,
-    cell: {
-      icon: '/images/category/food.png',
-      title: '2020-04-22'
-    }
+
   },
-  tapDialogButton(e) {
-    this.setData({
-      dialogShow: false
-    });
-  },
-  tabChange(e){
-    console.log(e);
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

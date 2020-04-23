@@ -1,5 +1,17 @@
 <!--miniprogram/pages/index.wxml-->
-<text>miniprogram/pages/index.wxml</text>
-<mp-dialog title="test" show="{{ dialogShow }}" bindbuttontap="tapDialogButton" buttons="{{[{text: '取消'}, {text: '确认'}]}}">
-    <view>test content</view>
-</mp-dialog>
+<!-- navigator -->
+<mp-navigation-bar loading="{{navigationBar.loading}}" show="{{navigationBar.show}}" animated="{{navigationBar.animated}}" color="{{navigationBar.color}}" background="{{navigationBar.background}}" title="{{ navigationBar.title }}" back="{{false}}">
+    <!-- <view slot="left">{{ navigationBar.left }}</view> -->
+</mp-navigation-bar>
+
+<!-- container -->
+<view class="container">
+    <mp-cells ext-class="my-cells" title="{{ cell.title }}">
+        <mp-cell link hover value="有hover效果" footer="说明文字">
+            <image slot="title" src="{{ cell.icon }}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </mp-cell>
+    </mp-cells>
+</view>
+
+<!-- tabbar -->
+<mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar>

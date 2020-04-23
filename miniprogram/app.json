@@ -13,15 +13,22 @@
     "pages/Demo/openapi/callback/callback",
     "pages/Demo/openapi/cloudid/cloudid",
     "pages/Demo/im/im",
-    "pages/Demo/im/room/room"
+    "pages/Demo/im/room/room",
+    "pages/stat/index",
+    "pages/calendar/index",
+    "pages/setting/index"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
+    "backgroundColor": "#f7f7f7",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#f7f7f7",
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "usingComponents": {
+    "mp-tabbar": "/weui/components/tabbar/tabbar",
+    "mp-navigation-bar": "/weui/components/navigation-bar/navigation-bar"
+  }
 }

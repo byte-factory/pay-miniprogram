@@ -28,6 +28,7 @@
 	"libVersion": "2.10.4",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"checkSiteMap": false,
 	"condition": {
 		"search": {
 			"current": -1,

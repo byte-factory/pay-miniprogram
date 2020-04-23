@@ -16,6 +16,25 @@ App({
       })
     }
 
-    this.globalData = {}
+    this.globalData = {
+      tabbar_list: [{
+        "text": "首页",
+        "iconPath": "/images/tabbar/home-noselect.png",
+        "selectedIconPath": "/images/tabbar/home.png",
+        dot: true
+      },
+      {
+        "text": "统计",
+        "iconPath": "/images/tabbar/stat-noselect.png",
+        "selectedIconPath": "/images/tabbar/stat.png",
+        dot: true
+      },
+      {
+        "text": "设置",
+        "iconPath": "/images/tabbar/setting-noselect.png",
+        "selectedIconPath": "/images/tabbar/setting.png",
+        badge: 'New'
+      }]
+    }
   }
 })
