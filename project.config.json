@@ -24,7 +24,7 @@
 		"nodeModules": true
 	},
 	"appid": "wx2b871515ee1221fd",
-	"projectname": "pay",
+	"projectname": "pay-miniprogram",
 	"libVersion": "2.10.4",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},

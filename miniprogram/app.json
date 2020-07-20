@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/index",
+    "pages/index/index",
     "pages/Demo/index/index",
     "pages/Demo/userConsole/userConsole",
     "pages/Demo/storageConsole/storageConsole",
@@ -16,7 +16,19 @@
     "pages/Demo/im/room/room",
     "pages/stat/index",
     "pages/calendar/index",
-    "pages/setting/index"
+    "pages/setting/index",
+    "pages/index/add/index",
+    "pages/index/add/address/index",
+    "pages/index/add/bz/index",
+    "pages/index/add/tag/index",
+    "pages/index/edit",
+    "pages/index/show",
+    "pages/setting/fixed/index",
+    "pages/setting/account/index",
+    "pages/setting/tag/index",
+    "pages/setting/bz/index",
+    "pages/setting/category/index",
+    "pages/wow/index"
   ],
   "window": {
     "backgroundColor": "#f7f7f7",

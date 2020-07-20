@@ -1,4 +1,4 @@
-// miniprogram/pages/calendar/index.js
+// miniprogram/pages/setting/tag/index.js
 Page({
 
   /**
