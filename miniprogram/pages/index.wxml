@@ -1,0 +1,51 @@
+<!-- navigator -->
+<mp-navigation-bar loading="{{navigationBar.loading}}" show="{{navigationBar.show}}"
+  animated="{{navigationBar.animated}}" color="{{navigationBar.color}}" background="{{navigationBar.background}}"
+  title="{{ navigationBar.title }}" back="{{false}}">
+  <!-- <view slot="left">{{ navigationBar.left }}</view> -->
+</mp-navigation-bar>
+
+<!-- container -->
+<view class="container">
+  <!-- 支出列表 -->
+    <view wx:if="{{ lists.length }}">
+      <view class="text-gray margin-top margin-left margin-bottom-sm">{{ default_content_title }}</view>
+      <view class="cu-list menu sm-border margin-top">
+        <block wx:for="{{ lists }}" wx:key="idx" wx:for-index="idx">
+          <view class="cu-item">
+            <view class="content padding-tb-sm" bindtap='goto' data-id="{{ item._id }}" data-index="{{ index }}">
+              <view class="text-lg">¥ {{ item.price }}</view>
+              <view class="text-grey text-sm">{{ item.date }}
+                <mp-icon class="margin-left" wx:if="{{ item.is_auto }}" icon="arrow" color="black" size="{{10}}"></mp-icon>
+              </view>
+              <view class="bz text-grey text-sm">{{ item.bz }}</view>
+            </view>
+            <view class="tag flex flex-wrap">
+              <view wx:if="{{ !item.tags.length }}" class="line-grey cu-tag">无标签</view>
+              <block wx:for="{{ item.tags }}" wx:for-item="tag" wx:for-index="idx" wx:key="idx">
+                <view bindtap="showTag" data-name="{{ tag }}" wx:if="{{ tag }}" class="cu-tag line-{{ mainColor }}">
+                  {{ tag }}</view>
+              </block>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <!-- / -->
+    <view wx:if="{{ tips }}" class="text-sm padding text-center">
+      <text class="text-grey">{{ tips }}</text>
+    </view>
+    <view class="margin-top text-center">
+      <navigator url="./more" class="cu-btn sm line-{{ mainColor }}">上个月支出</navigator>
+    </view>
+
+  <!-- 添加按钮 -->
+  <view class="padding lp-bottom bg-white">
+    <button type="primary" style="background-color: #F47B1D" bindtap="add_cost">记一笔</button>
+  </view>
+</view>
+
+
+<!-- tabbar -->
+<mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{tabbar_list}}" bindchange="tabChange">
+</mp-tabbar>

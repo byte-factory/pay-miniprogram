@@ -1,5 +1,6 @@
 @import "./weui/wxss/dist/style/weui.wxss";
-@import "./iconfont/iconfont.wxss";
+@import "./libs/iconfont/iconfont.wxss";
+@import "./libs/wxss/fromcolorui.wxss"
 
 .weui-bar__item_on .weui-tabbar__label{
   color: #F47B1D !important;

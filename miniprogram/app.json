@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/index",
     "pages/Demo/index/index",
     "pages/Demo/userConsole/userConsole",
     "pages/Demo/storageConsole/storageConsole",
@@ -15,7 +15,6 @@
     "pages/Demo/im/im",
     "pages/Demo/im/room/room",
     "pages/stat/index",
-    "pages/calendar/index",
     "pages/setting/index",
     "pages/index/add/index",
     "pages/index/add/address/index",
@@ -41,6 +40,7 @@
   "style": "v2",
   "usingComponents": {
     "mp-tabbar": "/weui/components/tabbar/tabbar",
-    "mp-navigation-bar": "/weui/components/navigation-bar/navigation-bar"
+    "mp-navigation-bar": "/weui/components/navigation-bar/navigation-bar",
+    "mp-icon": "/weui/components/icon/icon"
   }
 }
