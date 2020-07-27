@@ -1,5 +1,0 @@
-/* miniprogram/pages/openapi/openapi.wxss */
-
-.black {
-  color: black;
-}
